@@ -1,0 +1,11 @@
+C:\Users\swire\Documents\SeniorDesign_ORCMS\source\OpenReviewConferenceManagementSoftware\bin\Debug\netcoreapp3.0\OpenReviewConferenceManagementSoftware.exe
+C:\Users\swire\Documents\SeniorDesign_ORCMS\source\OpenReviewConferenceManagementSoftware\obj\Debug\netcoreapp3.0\OpenReviewConferenceManagementSoftware.csprojAssemblyReference.cache
+C:\Users\swire\Documents\SeniorDesign_ORCMS\source\OpenReviewConferenceManagementSoftware\obj\Debug\netcoreapp3.0\MainWindow.g.cs
+C:\Users\swire\Documents\SeniorDesign_ORCMS\source\OpenReviewConferenceManagementSoftware\obj\Debug\netcoreapp3.0\App.g.cs
+C:\Users\swire\Documents\SeniorDesign_ORCMS\source\OpenReviewConferenceManagementSoftware\obj\Debug\netcoreapp3.0\OpenReviewConferenceManagementSoftware_MarkupCompile.cache
+C:\Users\swire\Documents\SeniorDesign_ORCMS\source\OpenReviewConferenceManagementSoftware\obj\Debug\netcoreapp3.0\OpenReviewConferenceManagementSoftware_MarkupCompile.lref
+C:\Users\swire\Documents\SeniorDesign_ORCMS\source\OpenReviewConferenceManagementSoftware\obj\Debug\netcoreapp3.0\MainWindow.baml
+C:\Users\swire\Documents\SeniorDesign_ORCMS\source\OpenReviewConferenceManagementSoftware\obj\Debug\netcoreapp3.0\OpenReviewConferenceManagementSoftware.g.resources
+C:\Users\swire\Documents\SeniorDesign_ORCMS\source\OpenReviewConferenceManagementSoftware\obj\Debug\netcoreapp3.0\OpenReviewConferenceManagementSoftware.AssemblyInfoInputs.cache
+C:\Users\swire\Documents\SeniorDesign_ORCMS\source\OpenReviewConferenceManagementSoftware\obj\Debug\netcoreapp3.0\OpenReviewConferenceManagementSoftware.AssemblyInfo.cs
+C:\Users\swire\Documents\SeniorDesign_ORCMS\source\OpenReviewConferenceManagementSoftware\obj\Debug\netcoreapp3.0\OpenReviewConferenceManagementSoftware.pdb
