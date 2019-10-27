@@ -8157,11 +8157,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Chas\\source\\repos\\Landing Page\\Landing Page\\Landing Page.csproj",
+      "projectUniqueName": "C:\\Users\\Chas\\source\\repos\\SeniorDesign_ORCMS\\Landing Page\\Landing Page\\Landing Page.csproj",
       "projectName": "Landing Page",
-      "projectPath": "C:\\Users\\Chas\\source\\repos\\Landing Page\\Landing Page\\Landing Page.csproj",
+      "projectPath": "C:\\Users\\Chas\\source\\repos\\SeniorDesign_ORCMS\\Landing Page\\Landing Page\\Landing Page.csproj",
       "packagesPath": "C:\\Users\\Chas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Chas\\source\\repos\\Landing Page\\Landing Page\\obj\\",
+      "outputPath": "C:\\Users\\Chas\\source\\repos\\SeniorDesign_ORCMS\\Landing Page\\Landing Page\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

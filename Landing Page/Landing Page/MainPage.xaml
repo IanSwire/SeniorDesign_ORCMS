@@ -9,6 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <TextBox HorizontalAlignment="Center" Text="Welcome to ORCMS" TextWrapping="Wrap" VerticalAlignment="Center" TextReadingOrder="Default" Height="161" Width="593"/>
 
     </Grid>
 </Page>
