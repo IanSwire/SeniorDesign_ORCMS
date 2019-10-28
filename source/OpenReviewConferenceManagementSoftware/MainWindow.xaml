@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="Open Review Conference Management Software" Height="450" Width="800">
     <Grid>
+        <Button Name="btn_NewConference" Content="Create New Conference" HorizontalAlignment="Left" Margin="585,374,0,0" VerticalAlignment="Top" Click="btn_NewConference_Click"/>
 
     </Grid>
 </Window>

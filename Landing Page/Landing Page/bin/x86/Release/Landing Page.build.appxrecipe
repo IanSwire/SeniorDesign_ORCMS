@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-ICSR7T1</Machine>
-    <WindowsUser>Chas</WindowsUser>
+    <Machine>RYZEN7</Machine>
+    <WindowsUser>swire</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,80 +10,80 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>d53a73e2-5db1-4da5-ac89-d6b4542f68b4</PackageIdentityName>
     <PackageIdentityPublisher>CN=Chas</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Chas\source\repos\SeniorDesign_ORCMS\Landing Page\Landing Page\obj\x86\Release\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\swire\Documents\SeniorDesign_ORCMS\Landing Page\Landing Page\obj\x86\Release\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\Chas\source\repos\SeniorDesign_ORCMS\Landing Page\Landing Page\bin\x86\Release\AppX</LayoutDir>
+    <LayoutDir>C:\Users\swire\Documents\SeniorDesign_ORCMS\Landing Page\Landing Page\bin\x86\Release\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Chas\source\repos\SeniorDesign_ORCMS\Landing Page\Landing Page\bin\x86\Release\ilc\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\swire\Documents\SeniorDesign_ORCMS\Landing Page\Landing Page\bin\x86\Release\ilc\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Chas\source\repos\SeniorDesign_ORCMS\Landing Page\Landing Page\bin\x86\Release\ilc\Assets\FT_Logo.png">
+    <AppxPackagedFile Include="C:\Users\swire\Documents\SeniorDesign_ORCMS\Landing Page\Landing Page\bin\x86\Release\ilc\Assets\FT_Logo.png">
       <PackagePath>Assets\FT_Logo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Chas\source\repos\SeniorDesign_ORCMS\Landing Page\Landing Page\bin\x86\Release\ilc\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\swire\Documents\SeniorDesign_ORCMS\Landing Page\Landing Page\bin\x86\Release\ilc\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Chas\source\repos\SeniorDesign_ORCMS\Landing Page\Landing Page\bin\x86\Release\ilc\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\swire\Documents\SeniorDesign_ORCMS\Landing Page\Landing Page\bin\x86\Release\ilc\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Chas\source\repos\SeniorDesign_ORCMS\Landing Page\Landing Page\bin\x86\Release\ilc\Assets\SplashScreen.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\swire\Documents\SeniorDesign_ORCMS\Landing Page\Landing Page\bin\x86\Release\ilc\Assets\SplashScreen.scale-125.png">
       <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Chas\source\repos\SeniorDesign_ORCMS\Landing Page\Landing Page\bin\x86\Release\ilc\Assets\SplashScreen.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\swire\Documents\SeniorDesign_ORCMS\Landing Page\Landing Page\bin\x86\Release\ilc\Assets\SplashScreen.scale-150.png">
       <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Chas\source\repos\SeniorDesign_ORCMS\Landing Page\Landing Page\bin\x86\Release\ilc\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\swire\Documents\SeniorDesign_ORCMS\Landing Page\Landing Page\bin\x86\Release\ilc\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Chas\source\repos\SeniorDesign_ORCMS\Landing Page\Landing Page\bin\x86\Release\ilc\Assets\SplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\swire\Documents\SeniorDesign_ORCMS\Landing Page\Landing Page\bin\x86\Release\ilc\Assets\SplashScreen.scale-400.png">
       <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Chas\source\repos\SeniorDesign_ORCMS\Landing Page\Landing Page\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\swire\Documents\SeniorDesign_ORCMS\Landing Page\Landing Page\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Chas\source\repos\SeniorDesign_ORCMS\Landing Page\Landing Page\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\swire\Documents\SeniorDesign_ORCMS\Landing Page\Landing Page\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Chas\source\repos\SeniorDesign_ORCMS\Landing Page\Landing Page\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\swire\Documents\SeniorDesign_ORCMS\Landing Page\Landing Page\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Chas\source\repos\SeniorDesign_ORCMS\Landing Page\Landing Page\bin\x86\Release\ilc\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\swire\Documents\SeniorDesign_ORCMS\Landing Page\Landing Page\bin\x86\Release\ilc\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Chas\source\repos\SeniorDesign_ORCMS\Landing Page\Landing Page\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\swire\Documents\SeniorDesign_ORCMS\Landing Page\Landing Page\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Chas\source\repos\SeniorDesign_ORCMS\Landing Page\Landing Page\bin\x86\Release\ilc\clrcompression.dll">
+    <AppxPackagedFile Include="C:\Users\swire\Documents\SeniorDesign_ORCMS\Landing Page\Landing Page\bin\x86\Release\ilc\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Chas\source\repos\SeniorDesign_ORCMS\Landing Page\Landing Page\bin\x86\Release\ilc\Landing Page.dll">
+    <AppxPackagedFile Include="C:\Users\swire\Documents\SeniorDesign_ORCMS\Landing Page\Landing Page\bin\x86\Release\ilc\Landing Page.dll">
       <PackagePath>Landing Page.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Chas\source\repos\SeniorDesign_ORCMS\Landing Page\Landing Page\bin\x86\Release\ilc\Landing Page.exe">
+    <AppxPackagedFile Include="C:\Users\swire\Documents\SeniorDesign_ORCMS\Landing Page\Landing Page\bin\x86\Release\ilc\Landing Page.exe">
       <PackagePath>Landing Page.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Chas\source\repos\SeniorDesign_ORCMS\Landing Page\Landing Page\bin\x86\Release\ilc\Landing Page.pdb">
+    <AppxPackagedFile Include="C:\Users\swire\Documents\SeniorDesign_ORCMS\Landing Page\Landing Page\bin\x86\Release\ilc\Landing Page.pdb">
       <PackagePath>Landing Page.pdb</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Chas\source\repos\SeniorDesign_ORCMS\Landing Page\Landing Page\bin\x86\Release\ilc\resources.pri">
+    <AppxPackagedFile Include="C:\Users\swire\Documents\SeniorDesign_ORCMS\Landing Page\Landing Page\bin\x86\Release\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

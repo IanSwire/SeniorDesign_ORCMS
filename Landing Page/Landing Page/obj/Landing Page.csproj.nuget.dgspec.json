@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Chas\\source\\repos\\SeniorDesign_ORCMS\\Landing Page\\Landing Page\\Landing Page.csproj": {}
+    "C:\\Users\\swire\\Documents\\SeniorDesign_ORCMS\\Landing Page\\Landing Page\\Landing Page.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Chas\\source\\repos\\SeniorDesign_ORCMS\\Landing Page\\Landing Page\\Landing Page.csproj": {
+    "C:\\Users\\swire\\Documents\\SeniorDesign_ORCMS\\Landing Page\\Landing Page\\Landing Page.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Chas\\source\\repos\\SeniorDesign_ORCMS\\Landing Page\\Landing Page\\Landing Page.csproj",
+        "projectUniqueName": "C:\\Users\\swire\\Documents\\SeniorDesign_ORCMS\\Landing Page\\Landing Page\\Landing Page.csproj",
         "projectName": "Landing Page",
-        "projectPath": "C:\\Users\\Chas\\source\\repos\\SeniorDesign_ORCMS\\Landing Page\\Landing Page\\Landing Page.csproj",
-        "packagesPath": "C:\\Users\\Chas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Chas\\source\\repos\\SeniorDesign_ORCMS\\Landing Page\\Landing Page\\obj\\",
+        "projectPath": "C:\\Users\\swire\\Documents\\SeniorDesign_ORCMS\\Landing Page\\Landing Page\\Landing Page.csproj",
+        "packagesPath": "C:\\Users\\swire\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\swire\\Documents\\SeniorDesign_ORCMS\\Landing Page\\Landing Page\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Chas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\swire\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "uap10.0.17763"
