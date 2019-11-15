@@ -2,7 +2,7 @@ using System;
 using System.Diagnostics;
 using System.Collections.Generic;
 
-namespace utils {
+namespace OpenReviewConferenceManagementSoftware.utils
   class Simplex {
     private double[] c;
     private double[,] A;
