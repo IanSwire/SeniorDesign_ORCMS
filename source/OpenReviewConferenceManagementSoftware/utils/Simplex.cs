@@ -2,7 +2,7 @@ using System;
 using System.Diagnostics;
 using System.Collections.Generic;
 
-namespace OpenReviewConferenceManagementSoftware.utils
+namespace OpenReviewConferenceManagementSoftware.utils { 
   class Simplex {
     private double[] c;
     private double[,] A;
@@ -128,10 +128,7 @@ namespace OpenReviewConferenceManagementSoftware.utils
       N.Add(l);
       B.Add(e);
     }
-  }
-
-  class MainClass {
-    static void Main(string[] args) {
+    public static void test() {
       var s = new Simplex(
         new [] {10.2, 422.3, 6.91, 853},
         new [,] {
@@ -145,8 +142,8 @@ namespace OpenReviewConferenceManagementSoftware.utils
       );
 
       var answer = s.maximize();
-      Console.WriteLine(answer.Item1);
-      Console.WriteLine(string.Join(", ", answer.Item2));
+      Debug.WriteLine(answer.Item1);
+      Debug.WriteLine(string.Join(", ", answer.Item2));
     }
   }
 }

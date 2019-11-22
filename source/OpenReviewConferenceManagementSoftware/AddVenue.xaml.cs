@@ -29,7 +29,7 @@ namespace OpenReviewConferenceManagementSoftware
 
         private void btn_Save_Click(object sender, RoutedEventArgs e)
         {
-            utils.DatabaseConnection.AddVenue();
+            //utils.DatabaseConnection.AddVenue();
         }
     }
 }
