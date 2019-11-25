@@ -9,3 +9,15 @@ C:\Users\swire\Documents\SeniorDesign_ORCMS\source\OpenReviewConferenceManagemen
 C:\Users\swire\Documents\SeniorDesign_ORCMS\source\OpenReviewConferenceManagementSoftware\obj\Debug\netcoreapp3.0\OpenReviewConferenceManagementSoftware.AssemblyInfoInputs.cache
 C:\Users\swire\Documents\SeniorDesign_ORCMS\source\OpenReviewConferenceManagementSoftware\obj\Debug\netcoreapp3.0\OpenReviewConferenceManagementSoftware.AssemblyInfo.cs
 C:\Users\swire\Documents\SeniorDesign_ORCMS\source\OpenReviewConferenceManagementSoftware\obj\Debug\netcoreapp3.0\OpenReviewConferenceManagementSoftware.pdb
+C:\Users\swire\Documents\SeniorDesign_ORCMS\source\OpenReviewConferenceManagementSoftware\bin\Debug\netcoreapp3.0\OpenReviewConferenceManagementSoftware.deps.json
+C:\Users\swire\Documents\SeniorDesign_ORCMS\source\OpenReviewConferenceManagementSoftware\bin\Debug\netcoreapp3.0\OpenReviewConferenceManagementSoftware.runtimeconfig.json
+C:\Users\swire\Documents\SeniorDesign_ORCMS\source\OpenReviewConferenceManagementSoftware\bin\Debug\netcoreapp3.0\OpenReviewConferenceManagementSoftware.runtimeconfig.dev.json
+C:\Users\swire\Documents\SeniorDesign_ORCMS\source\OpenReviewConferenceManagementSoftware\bin\Debug\netcoreapp3.0\OpenReviewConferenceManagementSoftware.dll
+C:\Users\swire\Documents\SeniorDesign_ORCMS\source\OpenReviewConferenceManagementSoftware\bin\Debug\netcoreapp3.0\OpenReviewConferenceManagementSoftware.pdb
+C:\Users\swire\Documents\SeniorDesign_ORCMS\source\OpenReviewConferenceManagementSoftware\bin\Debug\netcoreapp3.0\Npgsql.dll
+C:\Users\swire\Documents\SeniorDesign_ORCMS\source\OpenReviewConferenceManagementSoftware\obj\Debug\netcoreapp3.0\AddVenue.g.cs
+C:\Users\swire\Documents\SeniorDesign_ORCMS\source\OpenReviewConferenceManagementSoftware\obj\Debug\netcoreapp3.0\AddVenue.baml
+C:\Users\swire\Documents\SeniorDesign_ORCMS\source\OpenReviewConferenceManagementSoftware\obj\Debug\netcoreapp3.0\OpenReviewConferenceManagementSoftware.csproj.CopyComplete
+C:\Users\swire\Documents\SeniorDesign_ORCMS\source\OpenReviewConferenceManagementSoftware\obj\Debug\netcoreapp3.0\OpenReviewConferenceManagementSoftware.dll
+C:\Users\swire\Documents\SeniorDesign_ORCMS\source\OpenReviewConferenceManagementSoftware\obj\Debug\netcoreapp3.0\NewConference.g.cs
+C:\Users\swire\Documents\SeniorDesign_ORCMS\source\OpenReviewConferenceManagementSoftware\obj\Debug\netcoreapp3.0\NewConference.baml

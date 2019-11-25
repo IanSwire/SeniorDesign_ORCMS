@@ -23,6 +23,13 @@ namespace OpenReviewConferenceManagementSoftware
         public MainWindow()
         {
             InitializeComponent();
+            utils.Simplex.test();
+        }
+
+        private void btn_NewConference_Click(object sender, RoutedEventArgs e)
+        {
+            NewConference window_NewConference = new NewConference();
+            window_NewConference.Show();
         }
     }
 }

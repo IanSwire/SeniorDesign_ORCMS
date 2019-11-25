@@ -31,5 +31,17 @@ namespace OpenReviewConferenceManagementSoftware.utils
                 return null;
             }
         }
+
+        public static bool AddVenue(string name, string street, string city, string state, int zip) {
+            var conn = EstablishConnection();
+            int id = 0;
+            if(conn != null)
+            {
+                NpgsqlCommand query = new NpgsqlCommand($"INSERT INTO public.venue VALUES({id},'{name}', '{street}', '{city}', '{state}', {zip});", conn);
+                query.ExecuteReader();
+                return true;
+            }
+            else { return false; }
+        }
     }
 }

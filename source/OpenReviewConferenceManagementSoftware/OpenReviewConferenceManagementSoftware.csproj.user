@@ -7,7 +7,21 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="AddVenue.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="NewConference.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AddVenue.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="NewConference.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
