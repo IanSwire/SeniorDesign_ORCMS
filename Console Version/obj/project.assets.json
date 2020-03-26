@@ -174,11 +174,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\swire\\Desktop\\SeniorDesign\\SeniorDesign.csproj",
+      "projectUniqueName": "C:\\Users\\swire\\Desktop\\SeniorDesign_ORCMS\\Console Version\\SeniorDesign.csproj",
       "projectName": "SeniorDesign",
-      "projectPath": "C:\\Users\\swire\\Desktop\\SeniorDesign\\SeniorDesign.csproj",
+      "projectPath": "C:\\Users\\swire\\Desktop\\SeniorDesign_ORCMS\\Console Version\\SeniorDesign.csproj",
       "packagesPath": "C:\\Users\\swire\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\swire\\Desktop\\SeniorDesign\\obj\\",
+      "outputPath": "C:\\Users\\swire\\Desktop\\SeniorDesign_ORCMS\\Console Version\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

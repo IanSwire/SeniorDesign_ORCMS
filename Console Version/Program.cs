@@ -148,7 +148,7 @@ namespace SeniorDesign
                                 _track = __track;
                         }
 
-                        listOfPapers.Add(new Paper(title, author, _track, 0, rank));
+                        listOfPapers.Add(new Paper(title, author, _track, rank));
                     }
                 }
             }

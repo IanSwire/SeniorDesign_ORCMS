@@ -10,7 +10,6 @@
               "track": {
                 "track_name": "Test Track 1"
               },
-              "numReviewers": 0,
               "Rank": 3
             },
             {
@@ -19,7 +18,6 @@
               "track": {
                 "track_name": "Test Track 1"
               },
-              "numReviewers": 0,
               "Rank": 1
             }
           ]
@@ -32,7 +30,6 @@
               "track": {
                 "track_name": "Test Track 1"
               },
-              "numReviewers": 0,
               "Rank": 4
             },
             {
@@ -41,7 +38,6 @@
               "track": {
                 "track_name": "Test Track 1"
               },
-              "numReviewers": 0,
               "Rank": 2
             }
           ]
@@ -80,7 +76,6 @@
               "track": {
                 "track_name": "Test Track 2"
               },
-              "numReviewers": 0,
               "Rank": 3
             },
             {
@@ -89,7 +84,6 @@
               "track": {
                 "track_name": "Test Track 2"
               },
-              "numReviewers": 0,
               "Rank": 1
             }
           ]
@@ -102,7 +96,6 @@
               "track": {
                 "track_name": "Test Track 2"
               },
-              "numReviewers": 0,
               "Rank": 4
             },
             {
@@ -111,7 +104,6 @@
               "track": {
                 "track_name": "Test Track 2"
               },
-              "numReviewers": 0,
               "Rank": 2
             }
           ]
@@ -150,7 +142,6 @@
               "track": {
                 "track_name": "Test Track 3"
               },
-              "numReviewers": 0,
               "Rank": 3
             },
             {
@@ -159,7 +150,6 @@
               "track": {
                 "track_name": "Test Track 3"
               },
-              "numReviewers": 0,
               "Rank": 1
             }
           ]
@@ -172,7 +162,6 @@
               "track": {
                 "track_name": "Test Track 3"
               },
-              "numReviewers": 0,
               "Rank": 4
             },
             {
@@ -181,7 +170,6 @@
               "track": {
                 "track_name": "Test Track 3"
               },
-              "numReviewers": 0,
               "Rank": 2
             }
           ]
@@ -220,7 +208,6 @@
               "track": {
                 "track_name": "Test Track 4"
               },
-              "numReviewers": 0,
               "Rank": 3
             },
             {
@@ -229,7 +216,6 @@
               "track": {
                 "track_name": "Test Track 4"
               },
-              "numReviewers": 0,
               "Rank": 1
             }
           ]
@@ -242,7 +228,6 @@
               "track": {
                 "track_name": "Test Track 4"
               },
-              "numReviewers": 0,
               "Rank": 4
             },
             {
@@ -251,7 +236,6 @@
               "track": {
                 "track_name": "Test Track 4"
               },
-              "numReviewers": 0,
               "Rank": 2
             }
           ]

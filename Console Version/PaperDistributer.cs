@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SQLite;
+using System.IO;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
@@ -38,6 +40,7 @@ namespace SeniorDesign
                 m_reviewers.Add(track, reviewerList);
             }
 
+            var outReviewAssignments = new List<Reviewer>();
             // Distributes papers
             foreach (var track in tracks)
             {
@@ -84,8 +87,12 @@ namespace SeniorDesign
                     Console.WriteLine($"Reviewer: {review.Name} : {review.ID}");
                     foreach (var paper in review.reviewPapers)
                         Console.WriteLine($"    {paper.Title}");
+
+                    outReviewAssignments.Add(review);
                 }
             }
+            var jsonString = JsonConvert.SerializeObject(outReviewAssignments, Newtonsoft.Json.Formatting.Indented);
+            File.WriteAllText($"paper_distribution.json", jsonString);
         }
     }
 }
