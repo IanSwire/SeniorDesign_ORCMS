@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
+using System.IO;
 using System.Text;
 
 
@@ -31,14 +32,35 @@ namespace SeniorDesign
 
         public void SetPath()
         {
-            Console.WriteLine("Please enter the path to the SQLITE database that you wish to work with or enter new to start with a new database.");
+            Console.WriteLine("Please enter the path to the SQLITE database that you wish to work with or enter new to start with a new database excluding .sqlite.");
             var userInput = Console.ReadLine().Trim();
             if(userInput.ToLower() == "new")
             {
-
+                Console.WriteLine("Please enter the name you would like to assign to this SQLITE version 3 database or the complete file path excluding .sqlite.");
+                userInput = Console.ReadLine().Trim();
+                File.Create($"{userInput}.sqlite");
+                using (SQLiteConnection myConnection = new SQLiteConnection(databasePath))
+                {
+                    myConnection.Open();
+                    SQLiteCommand cmd = new SQLiteCommand(myConnection);
+                    cmd.CommandText = "CREATE TABLE author (author_ID INTEGER PRIMARY KEY,human_ID INTEGER,submission_ID INTEGER NOT NULL,contact_author INTEGER DEFAULT 1,FOREIGN KEY (submission_ID) REFERENCES submission,FOREIGN KEY (human_ID) REFERENCES human,UNIQUE (human_ID, submission_ID));";
+                    cmd.ExecuteNonQuery();
+                    cmd.CommandText = "CREATE TABLE event (event_ID INTEGER PRIMARY KEY,name TEXT,year INTEGER,number INTEGER,venue_ID INTEGER,deadline_abstract TEXT,deadline_submissions TEXT,deadline_reviews TEXT,deadline_answers TEXT,deadline_withdrawal TEXT,deadline_deletion_reviews TEXT,deadline_deletion_answer TEXT,FOREIGN KEY (venue_ID) REFERENCES venue);";
+                    cmd.ExecuteNonQuery();
+                    cmd.CommandText = "CREATE TABLE human (human_ID INTEGER PRIMARY KEY,login TEXT,given_name TEXT NOT NULL,family_name TEXT,email TEXT NOT NULL);";
+                    cmd.ExecuteNonQuery();
+                    cmd.CommandText = "CREATE TABLE reviewers (reviewer_id INTEGER NOT NULL,human_id INTEGER NOT NULL,track_ID INTEGER NOT NULL,CONSTRAINT reviewers_PK PRIMARY KEY (reviewer_id),CONSTRAINT reviewers_FK FOREIGN KEY (human_id) REFERENCES human(human_ID) ON DELETE CASCADE ON UPDATE CASCADE,CONSTRAINT reviewers_FK_1 FOREIGN KEY (track_ID) REFERENCES track(track_ID) ON DELETE CASCADE ON UPDATE CASCADE);";
+                    cmd.ExecuteNonQuery();
+                    cmd.CommandText = "CREATE TABLE submission (submission_ID INTEGER PRIMARY KEY,event_ID INTEGER NOT NULL,submitting_human_ID INTEGER NOT NULL,submission_file_name TEXT,title TEXT NOT NULL,abstract TEXT NOT NULL,track_ID INTEGER DEFAULT(0),date_creation TEXT NOT NULL, \"rank\" INTEGER DEFAULT -1,UNIQUE (event_ID, title, submitting_human_ID),FOREIGN KEY (submitting_human_ID) REFERENCES human,FOREIGN KEY (track_ID) REFERENCES track);";
+                    cmd.ExecuteNonQuery();
+                    cmd.CommandText = "CREATE TABLE track (track_ID INTEGER PRIMARY KEY,event_ID INTEGER NOT NULL,track_name TEXT NOT NULL,FOREIGN KEY (event_ID) REFERENCES event,UNIQUE (event_ID, track_name));";
+                    cmd.ExecuteNonQuery();
+                    cmd.CommandText = "CREATE TABLE venue (venue_ID INTEGER PRIMARY KEY,name TEXT NOT NULL);";
+                    cmd.ExecuteNonQuery();
+                }
+                Console.WriteLine("Your data base has been created.");
             }
-            else
-                databasePath = $"Data Source = {userInput}; Version = 3;";
+            databasePath = $"Data Source = {userInput}.sqlite; Version = 3;";
         }
         public void SelectEvent()
         {
@@ -51,11 +73,87 @@ namespace SeniorDesign
             var userInput = Console.ReadLine();
             if(userInput.ToLower() == "new")
             {
-
+                CreateNewEvent();
             }
             else if(Convert.ToInt32(userInput) < events.Count + 1 && Convert.ToInt32(userInput) > 0)
             {
                 event_id = events[Convert.ToInt32(userInput) - 1].eventID;
+            }
+        }
+        public void CreateNewEvent() {
+            event_id = events.Count + 1;
+            Console.WriteLine("What would you like to call your event?");
+            var name = Console.ReadLine();
+            Console.WriteLine("What year will you hold your event?");
+            var year = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("What number in the event series is this? Use 1 if its the first time you are holding the event.");
+            var number = Convert.ToInt32(Console.ReadLine());
+            var venue_id = GetVenueID();
+            using (SQLiteConnection myConnection = new SQLiteConnection(databasePath))
+            {
+                myConnection.Open();
+                SQLiteCommand cmd = new SQLiteCommand(myConnection);
+                cmd.CommandText = $"INSERT INTO event (event_ID, name, \"year\", \"number\", venue_ID, deadline_abstract, deadline_submissions, deadline_reviews, deadline_answers, deadline_withdrawal, deadline_deletion_reviews, deadline_deletion_answer) VALUES({event_id}, '{name}', {year}, {number}, {venue_id}, NULL, NULL, NULL, NULL, NULL, NULL, NULL);";
+                cmd.ExecuteNonQuery();
+            }
+          /*Console.WriteLine("Would you like to assign deadlines now? (y/n)");
+            var makeDeadlines = Console.ReadLine().Trim().ToLower();
+            if (makeDeadlines == "y")
+                SetDeadlines();
+            else
+            {
+                
+            }*/
+        }
+        public void SetDeadlines()
+        {
+
+        }
+        public int GetVenueID()
+        {
+            int counter = 0;
+            Console.WriteLine("Where would you like to hold this event? Below is a list past locations, enter the number of that venue or enter new to enter a new venue");
+            using (SQLiteConnection myConnection = new SQLiteConnection(databasePath))
+            {
+                string getT = $"SELECT venue_ID,name FROM venue";
+                SQLiteCommand oCmd = new SQLiteCommand(getT, myConnection);
+                myConnection.Open();
+                using (SQLiteDataReader oreader = oCmd.ExecuteReader())
+                {
+                    while (oreader.Read())
+                    {
+                        Console.WriteLine($"{oreader["venue_ID"]} | {oreader["name"]}");
+                        counter++;
+                    }
+                }
+            }
+
+            do
+            {
+                var userInput = Console.ReadLine();
+                if (userInput.ToLower() == "new")
+                {
+                    counter++;
+                    CreateNewVenue(counter);
+                    return counter;
+                }
+                else if (Convert.ToInt32(userInput) <= counter && Convert.ToInt32(userInput) > 0)
+                {
+                    return Convert.ToInt32(userInput);
+                }
+                Console.WriteLine("Whatever you have entered does not work with the system, please try again.");
+            } while (true);
+        }
+        public void CreateNewVenue(int venueID)
+        {
+            Console.WriteLine("What would you like to call this venue?");
+            var name = Console.ReadLine();
+            using (SQLiteConnection myConnection = new SQLiteConnection(databasePath))
+            {
+                myConnection.Open();
+                SQLiteCommand cmd = new SQLiteCommand(myConnection);
+                cmd.CommandText = $"INSERT INTO venue (venue_ID, name) VALUES({venueID}, '{name}');";
+                cmd.ExecuteNonQuery();
             }
         }
         public void GetEvents()
@@ -93,7 +191,13 @@ namespace SeniorDesign
                         break;
                     case "2":
                         Console.WriteLine("Create conference schedule has been selected.");
-                        scheduleCreator.CreateSchedule(tracks, listOfPapers, 1, 2, 2);
+                        Console.WriteLine("How many days is your event?");
+                        var numOfDays = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("How many sessions will happen on each day?");
+                        var numOfSessionsPerDay = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("How many speakers are going to present during each session?");
+                        var numOfPapersPerSession = Convert.ToInt32(Console.ReadLine());
+                        scheduleCreator.CreateSchedule(tracks, listOfPapers, numOfDays, numOfSessionsPerDay, numOfPapersPerSession);
                         scheduleCreator.SaveSchedule();
                         break;
                     default:

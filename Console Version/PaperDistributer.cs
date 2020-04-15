@@ -3,8 +3,11 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data;
 using System.Data.SQLite;
 using System.IO;
+using System.Linq;
+using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
@@ -91,6 +94,46 @@ namespace SeniorDesign
                     outReviewAssignments.Add(review);
                 }
             }
+
+            DataTable reviewerToPapers = new DataTable();
+            reviewerToPapers.Clear();
+            reviewerToPapers.Columns.Add("Reviewer Name");
+            reviewerToPapers.Columns.Add("Track");
+            reviewerToPapers.Columns.Add("Paper Name");
+            reviewerToPapers.Columns.Add("Author Name");
+            foreach (var reviewer in outReviewAssignments)
+            {
+                foreach(var paper in reviewer.reviewPapers)
+                {
+                    DataRow newRow = reviewerToPapers.NewRow();
+                    newRow["Reviewer Name"] = $"{reviewer.Name}";
+                    newRow["Track"] = $"{reviewer.track}";
+                    newRow["Paper Name"] = $"{paper.Title}";
+                    newRow["Author Name"] = $"{paper.Author}";
+                    reviewerToPapers.Rows.Add(newRow);
+                }
+            }
+
+            StringBuilder sb = new StringBuilder();
+            IEnumerable<string> columnNames = reviewerToPapers.Columns.Cast<DataColumn>().
+                                              Select(column => column.ColumnName);
+            sb.AppendLine(string.Join(",", columnNames));
+            StringBuilder sb2 = new StringBuilder();
+            sb2.Append("<html><h1>Paper Distributuion</h1><table style=\"width: 90 % \"><tr><th>Reviewer Name</th><th>Review Track</th><th>Paper Name</th><th>Paper Author</th></tr>");
+            foreach (DataRow row in reviewerToPapers.Rows)
+            {
+                IEnumerable<string> fields = row.ItemArray.Select(field => field.ToString());
+                sb.AppendLine(string.Join(",", fields));
+
+                sb2.AppendLine("<tr><td>");
+                sb2.AppendLine(string.Join("</td><td>", fields));
+                sb2.AppendLine("</td></tr>");
+            }
+            File.WriteAllText("paper_distribution.csv", sb.ToString());
+
+            sb2.Append("</table></html>");
+            File.WriteAllText("confernceSchedule.html", sb2.ToString());
+
             var jsonString = JsonConvert.SerializeObject(outReviewAssignments, Newtonsoft.Json.Formatting.Indented);
             File.WriteAllText($"paper_distribution.json", jsonString);
         }
