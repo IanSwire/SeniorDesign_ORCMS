@@ -1,13 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "TeY914xWtHo1fG2TIxorrQRtt01vhkf+e6ChM9fXOYyHrc8L8MuNTxIc6M7S0AhwuRNJ5F3z1z4MWmenH2XK/g==",
+  "dgSpecHash": "g13PKZCNJOaAir2nP+dDzJSbjyYmTR1iZD4dIN6IqvQQHOfW6W1fAAklMmia0jfEpEHrLtAGgxLxAGpzu0y81A==",
   "success": true,
   "projectFilePath": "C:\\Users\\swire\\Desktop\\SeniorDesign_ORCMS\\Console Version\\SeniorDesign.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\swire\\.nuget\\packages\\json.net\\1.0.18\\json.net.1.0.18.nupkg.sha512",
+    "C:\\Users\\swire\\.nuget\\packages\\microsoft.data.sqlite.core\\3.1.3\\microsoft.data.sqlite.core.3.1.3.nupkg.sha512",
     "C:\\Users\\swire\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\swire\\.nuget\\packages\\sqlitepclraw.core\\2.0.2\\sqlitepclraw.core.2.0.2.nupkg.sha512",
     "C:\\Users\\swire\\.nuget\\packages\\system.data.sqlite\\1.0.112\\system.data.sqlite.1.0.112.nupkg.sha512",
-    "C:\\Users\\swire\\.nuget\\packages\\system.data.sqlite.core\\1.0.112\\system.data.sqlite.core.1.0.112.nupkg.sha512"
+    "C:\\Users\\swire\\.nuget\\packages\\system.data.sqlite.core\\1.0.112\\system.data.sqlite.core.1.0.112.nupkg.sha512",
+    "C:\\Users\\swire\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
   ],
   "logs": []
 }

@@ -5,15 +5,15 @@
     "track": {
       "track_name": "Test Track 1"
     },
-    "numOfPapers": 3,
+    "numOfPapers": 4,
     "reviewPapers": [
       {
-        "Title": "Test Paper 1",
+        "Title": "Test Paper 5",
         "Author": "Test Human",
         "track": {
           "track_name": "Test Track 1"
         },
-        "Rank": 1
+        "Rank": 2
       },
       {
         "Title": "Test Paper 9",
@@ -22,6 +22,14 @@
           "track_name": "Test Track 1"
         },
         "Rank": 3
+      },
+      {
+        "Title": "Test Paper 13",
+        "Author": "Test Human",
+        "track": {
+          "track_name": "Test Track 1"
+        },
+        "Rank": 4
       },
       {
         "Title": "Test Paper 17",
@@ -39,24 +47,8 @@
     "track": {
       "track_name": "Test Track 1"
     },
-    "numOfPapers": 5,
+    "numOfPapers": 2,
     "reviewPapers": [
-      {
-        "Title": "Test Paper 5",
-        "Author": "Test Human",
-        "track": {
-          "track_name": "Test Track 1"
-        },
-        "Rank": 2
-      },
-      {
-        "Title": "Test Paper 17",
-        "Author": "Test Human",
-        "track": {
-          "track_name": "Test Track 1"
-        },
-        "Rank": 5
-      },
       {
         "Title": "Test Paper 1",
         "Author": "Test Human",
@@ -72,14 +64,6 @@
           "track_name": "Test Track 1"
         },
         "Rank": 3
-      },
-      {
-        "Title": "Test Paper 13",
-        "Author": "Test Human",
-        "track": {
-          "track_name": "Test Track 1"
-        },
-        "Rank": 4
       }
     ]
   },
@@ -89,8 +73,24 @@
     "track": {
       "track_name": "Test Track 1"
     },
-    "numOfPapers": 2,
+    "numOfPapers": 4,
     "reviewPapers": [
+      {
+        "Title": "Test Paper 1",
+        "Author": "Test Human",
+        "track": {
+          "track_name": "Test Track 1"
+        },
+        "Rank": 1
+      },
+      {
+        "Title": "Test Paper 5",
+        "Author": "Test Human",
+        "track": {
+          "track_name": "Test Track 1"
+        },
+        "Rank": 2
+      },
       {
         "Title": "Test Paper 13",
         "Author": "Test Human",
@@ -100,12 +100,12 @@
         "Rank": 4
       },
       {
-        "Title": "Test Paper 5",
+        "Title": "Test Paper 17",
         "Author": "Test Human",
         "track": {
           "track_name": "Test Track 1"
         },
-        "Rank": 2
+        "Rank": 5
       }
     ]
   },
@@ -115,15 +115,39 @@
     "track": {
       "track_name": "Test Track 2"
     },
-    "numOfPapers": 1,
+    "numOfPapers": 4,
     "reviewPapers": [
       {
-        "Title": "Test Paper 2",
+        "Title": "Test Paper 6",
         "Author": "Test Human",
         "track": {
           "track_name": "Test Track 2"
         },
-        "Rank": 1
+        "Rank": 2
+      },
+      {
+        "Title": "Test Paper 14",
+        "Author": "Test Human",
+        "track": {
+          "track_name": "Test Track 2"
+        },
+        "Rank": 4
+      },
+      {
+        "Title": "Test Paper 10",
+        "Author": "Test Human",
+        "track": {
+          "track_name": "Test Track 2"
+        },
+        "Rank": 3
+      },
+      {
+        "Title": "Test Paper 18",
+        "Author": "Test Human",
+        "track": {
+          "track_name": "Test Track 2"
+        },
+        "Rank": 5
       }
     ]
   },
@@ -133,24 +157,8 @@
     "track": {
       "track_name": "Test Track 2"
     },
-    "numOfPapers": 5,
+    "numOfPapers": 3,
     "reviewPapers": [
-      {
-        "Title": "Test Paper 6",
-        "Author": "Test Human",
-        "track": {
-          "track_name": "Test Track 2"
-        },
-        "Rank": 2
-      },
-      {
-        "Title": "Test Paper 14",
-        "Author": "Test Human",
-        "track": {
-          "track_name": "Test Track 2"
-        },
-        "Rank": 4
-      },
       {
         "Title": "Test Paper 18",
         "Author": "Test Human",
@@ -168,12 +176,12 @@
         "Rank": 1
       },
       {
-        "Title": "Test Paper 10",
+        "Title": "Test Paper 14",
         "Author": "Test Human",
         "track": {
           "track_name": "Test Track 2"
         },
-        "Rank": 3
+        "Rank": 4
       }
     ]
   },
@@ -183,8 +191,16 @@
     "track": {
       "track_name": "Test Track 2"
     },
-    "numOfPapers": 4,
+    "numOfPapers": 3,
     "reviewPapers": [
+      {
+        "Title": "Test Paper 2",
+        "Author": "Test Human",
+        "track": {
+          "track_name": "Test Track 2"
+        },
+        "Rank": 1
+      },
       {
         "Title": "Test Paper 10",
         "Author": "Test Human",
@@ -200,22 +216,6 @@
           "track_name": "Test Track 2"
         },
         "Rank": 2
-      },
-      {
-        "Title": "Test Paper 14",
-        "Author": "Test Human",
-        "track": {
-          "track_name": "Test Track 2"
-        },
-        "Rank": 4
-      },
-      {
-        "Title": "Test Paper 18",
-        "Author": "Test Human",
-        "track": {
-          "track_name": "Test Track 2"
-        },
-        "Rank": 5
       }
     ]
   },
@@ -227,14 +227,6 @@
     },
     "numOfPapers": 5,
     "reviewPapers": [
-      {
-        "Title": "Test Paper 15",
-        "Author": "Test Human",
-        "track": {
-          "track_name": "Test Track 3"
-        },
-        "Rank": 4
-      },
       {
         "Title": "Test Paper 3",
         "Author": "Test Human",
@@ -250,6 +242,14 @@
           "track_name": "Test Track 3"
         },
         "Rank": 2
+      },
+      {
+        "Title": "Test Paper 15",
+        "Author": "Test Human",
+        "track": {
+          "track_name": "Test Track 3"
+        },
+        "Rank": 4
       },
       {
         "Title": "Test Paper 11",
@@ -278,22 +278,6 @@
     "numOfPapers": 5,
     "reviewPapers": [
       {
-        "Title": "Test Paper 3",
-        "Author": "Test Human",
-        "track": {
-          "track_name": "Test Track 3"
-        },
-        "Rank": 1
-      },
-      {
-        "Title": "Test Paper 7",
-        "Author": "Test Human",
-        "track": {
-          "track_name": "Test Track 3"
-        },
-        "Rank": 2
-      },
-      {
         "Title": "Test Paper 11",
         "Author": "Test Human",
         "track": {
@@ -308,6 +292,22 @@
           "track_name": "Test Track 3"
         },
         "Rank": 5
+      },
+      {
+        "Title": "Test Paper 3",
+        "Author": "Test Human",
+        "track": {
+          "track_name": "Test Track 3"
+        },
+        "Rank": 1
+      },
+      {
+        "Title": "Test Paper 7",
+        "Author": "Test Human",
+        "track": {
+          "track_name": "Test Track 3"
+        },
+        "Rank": 2
       },
       {
         "Title": "Test Paper 15",
@@ -336,22 +336,6 @@
         "Rank": 1
       },
       {
-        "Title": "Test Paper 12",
-        "Author": "Test Human",
-        "track": {
-          "track_name": "Test Track 4"
-        },
-        "Rank": 3
-      },
-      {
-        "Title": "Test Paper 20",
-        "Author": "Test Human",
-        "track": {
-          "track_name": "Test Track 4"
-        },
-        "Rank": 5
-      },
-      {
         "Title": "Test Paper 8",
         "Author": "Test Human",
         "track": {
@@ -360,12 +344,28 @@
         "Rank": 2
       },
       {
+        "Title": "Test Paper 12",
+        "Author": "Test Human",
+        "track": {
+          "track_name": "Test Track 4"
+        },
+        "Rank": 3
+      },
+      {
         "Title": "Test Paper 16",
         "Author": "Test Human",
         "track": {
           "track_name": "Test Track 4"
         },
         "Rank": 4
+      },
+      {
+        "Title": "Test Paper 20",
+        "Author": "Test Human",
+        "track": {
+          "track_name": "Test Track 4"
+        },
+        "Rank": 5
       }
     ]
   },
@@ -378,12 +378,12 @@
     "numOfPapers": 5,
     "reviewPapers": [
       {
-        "Title": "Test Paper 8",
+        "Title": "Test Paper 12",
         "Author": "Test Human",
         "track": {
           "track_name": "Test Track 4"
         },
-        "Rank": 2
+        "Rank": 3
       },
       {
         "Title": "Test Paper 16",
@@ -394,6 +394,14 @@
         "Rank": 4
       },
       {
+        "Title": "Test Paper 20",
+        "Author": "Test Human",
+        "track": {
+          "track_name": "Test Track 4"
+        },
+        "Rank": 5
+      },
+      {
         "Title": "Test Paper 4",
         "Author": "Test Human",
         "track": {
@@ -402,20 +410,12 @@
         "Rank": 1
       },
       {
-        "Title": "Test Paper 12",
+        "Title": "Test Paper 8",
         "Author": "Test Human",
         "track": {
           "track_name": "Test Track 4"
         },
-        "Rank": 3
-      },
-      {
-        "Title": "Test Paper 20",
-        "Author": "Test Human",
-        "track": {
-          "track_name": "Test Track 4"
-        },
-        "Rank": 5
+        "Rank": 2
       }
     ]
   }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Data.Sqlite;
+using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
 using System.IO;
@@ -21,12 +22,16 @@ namespace SeniorDesign
             var p = new Program();
             while (true)
             {
+                Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+                p.event_id = -1;
                 Console.WriteLine("Hello and welcome to Open Review Confernce Management Software.");
                 Console.WriteLine("If you need help at anytime, just enter help to view a list of all the commands.");
                 p.SetPath();
                 p.SelectEvent();
                 p.LoadDatabase();
                 p.EventManagement();
+                Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+                Console.WriteLine();
             }
         }
 
@@ -38,7 +43,8 @@ namespace SeniorDesign
             {
                 Console.WriteLine("Please enter the name you would like to assign to this SQLITE version 3 database or the complete file path excluding .sqlite.");
                 userInput = Console.ReadLine().Trim();
-                File.Create($"{userInput}.sqlite");
+                SQLiteConnection.CreateFile($"{userInput}.sqlite");
+                databasePath = $"Data Source = {userInput}.sqlite; Version = 3;";
                 using (SQLiteConnection myConnection = new SQLiteConnection(databasePath))
                 {
                     myConnection.Open();
@@ -65,20 +71,17 @@ namespace SeniorDesign
         public void SelectEvent()
         {
             GetEvents();
-            Console.WriteLine("Please select and event from the list of events below or enter new to start creating a new event.");
-            for(int i = 1; i <= events.Count; i++)
-            {
+            Console.WriteLine("Please select an event from the list of events below, enter new to start creating a new event, or type back to go to the main menu.");
+            for (int i = 1; i <= events.Count; i++)
                 Console.WriteLine($" {i}) {events[i - 1].eventName}");
-            }
+
             var userInput = Console.ReadLine();
-            if(userInput.ToLower() == "new")
-            {
+            if (userInput.ToLower() == "new")
                 CreateNewEvent();
-            }
-            else if(Convert.ToInt32(userInput) < events.Count + 1 && Convert.ToInt32(userInput) > 0)
-            {
-                event_id = events[Convert.ToInt32(userInput) - 1].eventID;
-            }
+            else if (userInput == "back")
+                return;
+            else if (Convert.ToInt32(userInput) < events.Count + 1 && Convert.ToInt32(userInput) > 0)
+                 event_id = events[Convert.ToInt32(userInput) - 1].eventID;
         }
         public void CreateNewEvent() {
             event_id = events.Count + 1;
@@ -177,9 +180,12 @@ namespace SeniorDesign
         }
         public void EventManagement()
         {
-            while (true)
+            if (event_id == -1)
+                return;
+            var coninuteRunning = true;
+            while (coninuteRunning)
             {
-                Console.WriteLine("Please select one of the following actions below:");
+                Console.WriteLine("Please select one of the following actions below or type back to the main menu:");
                 Console.WriteLine(" 1) Distribute papers to reviews");
                 Console.WriteLine(" 2) Create conference schedule");
                 var userInput = Console.ReadLine().Trim();
@@ -200,6 +206,9 @@ namespace SeniorDesign
                         scheduleCreator.CreateSchedule(tracks, listOfPapers, numOfDays, numOfSessionsPerDay, numOfPapersPerSession);
                         scheduleCreator.SaveSchedule();
                         break;
+                    case "back":
+                        coninuteRunning = false;
+                        break;
                     default:
                         Console.WriteLine("The input you have entered does not match any of the choices.");
                         break;
@@ -210,6 +219,8 @@ namespace SeniorDesign
 
         public void LoadDatabase()
         {
+            if (event_id == -1)
+                return;
             LoadTracks();
             LoadSubmissions();
             LoadReviewers();
