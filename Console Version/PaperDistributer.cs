@@ -132,7 +132,7 @@ namespace SeniorDesign
             File.WriteAllText("paper_distribution.csv", sb.ToString());
 
             sb2.Append("</table></html>");
-            File.WriteAllText("confernceSchedule.html", sb2.ToString());
+            File.WriteAllText("paper_distribution.html", sb2.ToString());
 
             var jsonString = JsonConvert.SerializeObject(outReviewAssignments, Newtonsoft.Json.Formatting.Indented);
             File.WriteAllText($"paper_distribution.json", jsonString);
