@@ -119,7 +119,7 @@ namespace SeniorDesign
                                               Select(column => column.ColumnName);
             sb.AppendLine(string.Join(",", columnNames));
             StringBuilder sb2 = new StringBuilder();
-            sb2.Append("<html><style>table, th, td {border: 1px solid black;}</style><h1>Paper Distributuion</h1><table style=\"width: 90 % \"><tr><th>Reviewer Name</th><th>Review Track</th><th>Paper Name</th><th>Paper Author</th></tr>");
+            sb2.Append("<html><style>table, th, td {padding: 10px;border: 1px solid black;border-collapse: collapse;}</style><h1>Paper Distributuion</h1><table style=\"width: 90 % \"><tr><th>Reviewer Name</th><th>Review Track</th><th>Paper Name</th><th>Paper Author</th></tr>");
             foreach (DataRow row in reviewerToPapers.Rows)
             {
                 IEnumerable<string> fields = row.ItemArray.Select(field => field.ToString());
