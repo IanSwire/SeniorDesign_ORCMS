@@ -75,7 +75,7 @@ namespace SeniorDesign
                                               Select(column => column.ColumnName);
             sb.AppendLine(string.Join(",", columnNames));
             StringBuilder sb2 = new StringBuilder();
-            sb2.Append("<html><h1>Schedule</h1><table style=\"width: 90 % \"><tr><th>Day</th><th>Track</th><th>Session ID</th><th>Speaking Order</th><th>Speaker Name</th><th>Speaker Paper</th></tr>");
+            sb2.Append("<html><style>table, th, td {border: 1px solid black;}</style><h1>Schedule</h1><table style=\"width: 90 % \"><tr><th>Day</th><th>Track</th><th>Session ID</th><th>Speaking Order</th><th>Speaker Name</th><th>Speaker Paper</th></tr>");
             foreach (DataRow row in dt.Rows)
             {
                 IEnumerable<string> fields = row.ItemArray.Select(field => field.ToString());
